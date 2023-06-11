@@ -1,8 +1,7 @@
 import { signIn, signOut, useSession } from "next-auth/react";
 import Link from "next/link";
-import React from "react";
 
-const SideNav = () => {
+const SideNav: React.FC = () => {
   const session = useSession();
   const user = session.data?.user;
   return (
